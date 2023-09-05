@@ -79,15 +79,15 @@ export default function Home() {
             <h1>Pokemon Name: {capitalize(Pokemon.data.name)}</h1>
             <h2>Abilities</h2>
             <ul>
-              {Pokemon.data.abilities.map((item, index) => {
-                return <li key={item.ability.name}>{item.ability.name}{(index < Pokemon.data.abilities.length - 1) && <>{","}&nbsp;</>} </li>
+              {Pokemon.data.abilities.map((item, index, arr) => {
+                return <li key={item.ability.name}>{item.ability.name}{(index < arr.length - 1) && <>{","}&nbsp;</>} </li>
               })}
             </ul>
 
             <h2>stats</h2>
             <ul>
-              {Pokemon.data.stats.map((item, index) => {
-                return <li key={item.stat.name}>{item.stat.name}{(index < Pokemon.data.stats.length - 1) && <>{","}&nbsp;</>} </li>
+              {Pokemon.data.stats.map((item, index, arr) => {
+                return <li key={item.stat.name}>{item.stat.name}{(index < arr.length - 1) && <>{","}&nbsp;</>} </li>
               })}
             </ul>
           </>
