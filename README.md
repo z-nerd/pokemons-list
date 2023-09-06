@@ -1,4 +1,11 @@
 # Pokemons List
+A simple Pokemons viewer using pokeapi.co api
+
+demo: [https://pokemons-zero.vercel.app](https://pokemons-zero.vercel.app)
+
+## Project Requirements
+Nextjs 13(App router), Typescript, Redux toolkit, Api management (rtk query)
+
 
 ## Dynamic Type Generator
 ```bash
